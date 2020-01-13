@@ -1,0 +1,233 @@
+/* css reset 样式重置*/
+body,
+div,
+ul,
+li,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+textarea,
+select,
+p,
+dl,
+dt,
+dd,
+a,
+img,
+button,
+form,
+table,
+th,
+tr,
+td,
+tbody,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section {
+  margin: 0;
+  padding: 0;
+  /*所有盒子布局采用内减模式*/
+  -webkit-box-sizing: border-box;
+  /* 兼容-webkit-内核浏览器 */
+  box-sizing: border-box;
+  /*去除移动端点击高亮颜色*/
+  -webkit-tap-highlight-color: transparent;
+}
+body {
+  font-size: 14px;
+  color: #333;
+  font-family: 'Microsoft YaHei', Arial, sans-serif;
+  /*后面的都是 备胎*/
+}
+ol,
+ul {
+  list-style: none;
+}
+a,
+a:hover {
+  text-decoration: none;
+  color: #333;
+}
+input {
+  border: none;
+  outline: none;
+  /* 在 移动端浏览器 表单可能会出现 阴影 高亮 3d效果,需要清除*/
+  -webkit-appearance: none;
+}
+/* 废物利用 */
+em,
+i {
+  font-style: normal;
+}
+/*commom css 公共样式*/
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+/* 清除浮动 */
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+  line-height: 0;
+  visibility: hidden;
+  height: 0;
+}
+@media (min-width: 320px) {
+  html {
+    /*font-size: 100/750 * 320px*/
+    font-size: 42.67px;
+  }
+}
+@media (min-width: 375px) {
+  html {
+    font-size: 50px;
+  }
+}
+@media (min-width: 414px) {
+  html {
+    font-size: 55.2px;
+  }
+}
+@media (min-width: 480px) {
+  html {
+    font-size: 64px;
+  }
+}
+@media (min-width: 640px) {
+  html {
+    font-size: 85.33px;
+  }
+}
+@media (min-width: 750px) {
+  html {
+    font-size: 100px;
+  }
+}
+a:focus {
+  text-decoration: none;
+}
+.aside-left {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 180px;
+  height: 100%;
+  background-color: #222D32;
+  z-index: 999;
+  margin-top: 50px;
+  transition: all 1s;
+}
+.aside-left .title {
+  margin-top: -50px;
+  text-align: center;
+}
+.aside-left .title a {
+  color: #fff;
+  line-height: 50px;
+  font-size: 30px;
+}
+.aside-left .user {
+  width: 180px;
+  height: 180px;
+  padding-top: 30px;
+  text-align: center;
+  color: #fff;
+}
+.aside-left .user img {
+  border-radius: 50%;
+  width: 80px;
+}
+.aside-left .user p {
+  font-size: 18px;
+  height: 40px;
+  line-height: 40px;
+}
+.aside-left .nav {
+  text-align: center;
+}
+.aside-left .nav a.current {
+  background-color: #1D1F21;
+  border-left: 3px solid #006699;
+}
+.aside-left .nav ul {
+  margin-bottom: 10px;
+}
+.aside-left .nav ul a {
+  height: 40px;
+  display: block;
+  line-height: 40px;
+  color: #fff;
+  font-size: 14px;
+}
+.aside-left .nav ul .child a {
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  display: block;
+  color: #fff;
+}
+.aside-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #3C8DBC;
+}
+.aside-top a {
+  font-size: 30px;
+  color: #fff;
+  line-height: 50px;
+}
+.aside-top .menu {
+  padding: 0 0 0 195px;
+  transition: all 1s;
+}
+.aside-top .out {
+  padding-right: 10px;
+}
+.main {
+  width: 100%;
+  height: 1000px;
+  padding: 50px 15px 0 195px;
+  transition: all 1s;
+}
+.main .breadcrumb {
+  margin: 20px 0;
+}
+.main .breadcrumb a {
+  color: #337ab7;
+}
+.main .breadcrumb .active {
+  color: #777;
+}
+.box {
+  margin-left: -180px;
+}
+.pad {
+  padding: 50px 15px 0 15px!important;
+}
+.table-bordered {
+  margin-top: 20px;
+}
+.table-bordered th,
+.table-bordered td {
+  text-align: center;
+  vertical-align: middle;
+}

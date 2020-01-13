@@ -1,0 +1,87 @@
+/* css reset 样式重置*/
+body, div, ul, li, ol, h1, h2, h3, h4, h5, h6, input, textarea, select, p, dl, dt, dd, a, img, button, form, table, th, tr, td, tbody, article, aside, details, figcaption, figure, footer, header, menu, nav, section {
+  margin: 0;
+  padding: 0;
+  /*所有盒子布局采用内减模式*/
+  -webkit-box-sizing: border-box;
+  /* 兼容-webkit-内核浏览器 */
+  box-sizing: border-box;
+  /*去除移动端点击高亮颜色*/
+  -webkit-tap-highlight-color: transparent;
+}
+body {
+  font-size: 14px;
+  color: #333;
+  font-family: 'Microsoft YaHei', Arial, sans-serif;
+  /*后面的都是 备胎*/
+}
+ol,
+ul {
+  list-style: none;
+}
+a,
+a:hover {
+  text-decoration: none;
+  color: #333;
+}
+input {
+  border: none;
+  outline: none;
+  /* 在 移动端浏览器 表单可能会出现 阴影 高亮 3d效果,需要清除*/
+  -webkit-appearance: none;
+}
+
+/* 废物利用 */
+em, i {
+  font-style: normal;
+}
+
+
+/*commom css 公共样式*/
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+/* 清除浮动 */
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+  line-height: 0;
+  visibility: hidden;
+  height: 0;
+}
+@media (min-width: 320px) {
+  html {
+    /*font-size: 100/750 * 320px*/
+    font-size: 42.67px;
+  }
+}
+@media (min-width: 375px) {
+  html {
+    font-size: 50px;;
+  }
+}
+@media (min-width: 414px) {
+  html {
+    font-size: 55.2px;;
+  }
+}
+@media (min-width: 480px) {
+  html {
+    font-size: 64px;;
+  }
+}
+@media (min-width: 640px) {
+  html {
+    font-size: 85.33px;
+  }
+}
+@media (min-width: 750px) {
+  html {
+    font-size: 100px;;
+  }
+}

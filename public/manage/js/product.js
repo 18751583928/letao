@@ -150,8 +150,6 @@ $(function() {
        // 通过 last-of-type 找到imgBox盒子中最后一个 img 类型的标签, 让他自杀
        $("#imgBox img:last-of-type").remove();
      }
-
-
       // 如果处理后, 图片数组的长度为 3, 说明已经选择了三张图片, 可以进行提交
       // 需要将表单 picStatus 的校验状态, 置成 VALID
       if ( picArr.length === 3 ) {
